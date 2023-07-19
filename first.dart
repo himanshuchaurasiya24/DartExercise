@@ -22,4 +22,14 @@ void main() {
   world
   multiline string here''';
   print(multi);
+  var someValue = 10;
+  print(someValue);
+  final someValue1 = 100;
+  print(someValue1);
+  const somevalue2 = 200;
+  print(somevalue2);
+  final date = DateTime.now();
+  print(date);
+  // const dataTime = DateTime.now();
+  // print(dataTime);
 }

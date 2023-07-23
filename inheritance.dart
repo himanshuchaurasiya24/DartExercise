@@ -9,6 +9,10 @@ void main() {
 }
 // indirect multple inheritance the returning datatype need not be the sameie, it can be void and int but their name should be the same;
 // super . onlhy works with extends keyword and not with the implements  refers to the instance of the class we extend from;
+// in normal class ->
+// void accelerate(){};
+// in abstract class-->
+// void accelerate();
 
 class Vehicle {
   int speed = 10;

@@ -40,10 +40,13 @@ void countDown() {
   controller.sink.add(4);
   controller.sink.add(5);
   controller.sink.add(6);
-  controller.sink.addError("heyy error");
+  // close your sink after adding values;
+  controller.sink.close();
+  // controller.sink.addError("heyy error");
   controller.stream.listen((event) {
     print(event);
   }, onError: (error) {
     print(error);
   });
+  controller.close(); // close controlelr after the work is done;
 }
